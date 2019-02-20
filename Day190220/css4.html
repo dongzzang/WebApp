@@ -4,17 +4,20 @@
     <meta charset="utf-8">
     <title>CSS Test4</title>
     <style>
-      #header h1 {color:red;}
-      #section h1 {color:orange;}
+      /* #header h1 {color:red;}
+      #section h1 {color:orange;} */
+      #header h1, #header h2 {color:blue;}
     </style>
   </head>
   <body>
     <div id="header">
       <h1 class="title"> CSS 후손 선택자</h1>
       <div id="nav">
-        <h1>Navigation</h1>
+        <h2>Navigation</h2>
       </div>
+      <h2> 일반 내용 </h2>
     </div>
+    <h2> 일반 내용 </h2>
     <div id="section">
       <h1 class="title"> CSS 후손 선택자</h1>
       <p>CSS후손 선택자는 특정한 태그의 후손을 선택할 때 사용</p>
