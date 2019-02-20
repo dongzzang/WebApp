@@ -6,14 +6,28 @@
     <style>
       /* #header h1 {color:red;}
       #section h1 {color:orange;} */
-      #header h1, #header h2 {color:blue;}
+      /* #header h1, #header h2 {color:blue;} */
+      #header > h1 {color:blue;}
+      #section > h1 {color:orange;}
+      table > tr > th {color:red;}
+      /*  > 를 쓰면 자손 선택자(자신에게 직접연결(직계)) 안쓰면 후손 선택자(자손에게 연결된것까지) */
     </style>
   </head>
   <body>
+    <table border="1">
+      <tr>
+        <th>Name</th>
+        <th>Address</th>
+      </tr>
+      <tr>
+        <td>Hong</td>
+        <td>Seoul</td>
+      </tr>
+    </table>
     <div id="header">
       <h1 class="title"> CSS 후손 선택자</h1>
       <div id="nav">
-        <h2>Navigation</h2>
+        <h1>Navigation</h1>
       </div>
       <h2> 일반 내용 </h2>
     </div>
