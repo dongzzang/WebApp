@@ -9,11 +9,17 @@
       /* #header h1, #header h2 {color:blue;} */
       #header > h1 {color:blue;}
       #section > h1 {color:orange;}
-      table > tr > th {color:red;}
+      table > tbody > tr> th {color:red;}
+      /* table 작성시 tbody가 자동생성 되었기 때문에 table생성시 조심해야 한다.*/
+      /* table th {color:blue;} */
+      /* 따라서 table style 작성시 자손선택자보단 후손선택자를 사용함이 좋다.*/
       /*  > 를 쓰면 자손 선택자(자신에게 직접연결(직계)) 안쓰면 후손 선택자(자손에게 연결된것까지) */
+      #header  h1:hover {color:red;}
+      #header  h1:active {color:green;}
     </style>
   </head>
   <body>
+    <h1>반응 선택자</h1>
     <table border="1">
       <tr>
         <th>Name</th>
