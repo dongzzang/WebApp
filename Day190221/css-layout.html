@@ -18,14 +18,21 @@
       #grid
       {
         border:5px solid red; display:grid;
-        grid-template-columns:150px 11fr;
+        grid-template-columns:1fr 1fr;
+        /*첫 번째 div는 150px 두 번째 div는 150px을 제외한 나머지전체를 사용한다는 의미*/
       }
+      div.content{border:5px solid gray;}
     </style>
   </head>
   <body>
     <div id="grid">
-      <div> NAVIGATION </div>
-      <div> HTML </div>
+      <div class="content"> NAVIGATION </div>
+      <div class="content"> We are pleased to announce that Dr.Jun Murai,
+        W3C Steering Committee Member and Professor of Keio University
+        has accepted the Knight of the Legion of Honour Medal from the French government.
+        The decoration ceremony took place on 13 February at the French Ambassador’s residence.
+        The Legion of Honour is the highest French order of merit for military and civil merits
+        created by Napoleon Bonaparte in 1802. </div>
     </div>
     <div class="container">
       <div class="item"> Menu - 1 </div>
