@@ -4,12 +4,28 @@
     <meta charset="utf-8">
     <title>CSS Property Basic</title>
     <style>
+      body
+      {
+        background-image:url("./../media/backgroundFront.png");
+      }
       .box
       {
         border-width:thick;
         border-style:dashed;
         border-color:black;
-        border-radius:20px;
+        border-radius:50px 40px 20px 10px;
+        /*왼쪽 위 부터 시계방향으로 설정됨*/
+        margin-bottom:20px;
+      }
+      #box
+      {
+        display:inline-block;
+        background-color:red;
+        width:100px;
+        height:50px;
+        margin:10px;
+        /*inline 형태일 경우 width와 height는 적용이 안되고
+          margin 또한 좌우만 적용이 된다.*/
       }
     </style>
   </head>
@@ -17,5 +33,12 @@
     <div class="box">
       <h1>HTML / CSS / JavaScript</h1>
     </div>
+    <p>외곽 더미 객체</p>
+    <span>더미 객체</span>
+    <div id="box">
+      대상 객체
+    </div>
+    <span>더미 객체</span>
+    <p>외곽 더미 객체</p>
   </body>
 </html>
