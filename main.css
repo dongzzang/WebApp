@@ -8,9 +8,8 @@ a:hover{color:red;}
 footer{
   color:blue;
 }
-#grid {display:grid; grid-template-columns: 200px 1fr;}
-#grid ul {border-right:1px solid black; width:150px;
-          margin:0px; padding-left:33px; font-size:24px; color:purple;}
+/* #grid {display:grid; grid-template-columns: 200px 1fr;} */
+
 .top_bar {background:skyblue; font-size:large; font-style:italic;text-align:center;
           position:fixed;left:85%;top:0;right:0;width:120px; margin:auto}
 .top_bar > a {color:green; text-decoration: none;}
