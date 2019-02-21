@@ -25,6 +25,29 @@
        .font_bold {font-weight:bold;}
        .font_center {text-align:center;}
        .font_right {text-align:right;}
+       .button
+       {
+         width:150px; height:70px;
+         background-color:#FF6A00;
+         border:10px solid #FFFFFF;
+         border-radius:30px;
+         box-shadow:5px 5px 5px #A9A9A9;
+       }
+       .button > a
+       {
+         display:block;
+         line-height:70px;
+         text-decoration:none;
+       }
+       /* .button > a:hover
+       {
+         color:green;
+       } */
+       .button > a:active
+       {
+         color:green;
+       }
+
 
     </style>
   </head>
@@ -33,6 +56,10 @@
     <p class="font_big font_italic font_bold font_center">
         Cascading Style Sheet
     </p>
+    <div class="button">
+      <a href="#" class="font_big font_italic font_bold font_center"> Click</a>
+
+    </div>
     <span class="font_center"> HTML/CSS</span>
     <!-- span tag경우 inline 형태이기 때문에 text-align 옵션이 설정되지 않는다.-->
     <p class="font_bold font_right"> 2019. 02. 21</p>
