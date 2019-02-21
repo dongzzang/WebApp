@@ -2,53 +2,33 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>CSS Property Basic3</title>
+    <title>CSS Property Basic4</title>
     <style>
-      body > div
+      img
       {
-        width:400px; height:100px;
-        border:3px solid black;
-        position:relative;
-        /* overflow:hidden; */
-        overflow:scroll;
-        /* 부모의 영역에서 넘어가면 scroll(스크롤) 옵션 또는 hidden(숨김) 옵션을 사용*/
+        float:right;
       }
-
       .box
       {
         width:100px; height:100px;
-        position:absolute;
-        /* absolute 는 절대좌표 */
-        /* relative 는 상대좌표 */
-      }
-      .box:nth-child(1)
-      {
         background-color:red;
-        left:10px; top:10px;
-        z-index:100;
+        margin:10px; padding:10px;
+        float:right;
       }
-      .box:nth-child(2)
-      {
-        background-color:green;
-        left:50px; top:50px;
-        z-index:10;
-      }
-      .box:nth-child(3)
-      {
-        background-color:blue;
-        left:90px; top:90px;
-        z-index:1;
-      }
-
     </style>
   </head>
   <body>
-    <h1>HTML/ CSS/ JavaScript</h1>
-    <div>
-      <div class="box"> 1 </div>
-      <div class="box"> 2 </div>
-      <div class="box"> 3 </div>
-    </div>
-    <h1>HTML/ CSS/ JavaScript</h1>
+    <div class="box"> 1 </div>
+    <div class="box"> 2 </div>
+    <hr / >
+    <img src="./../media/html-logo.png" />
+    <p>Cascading Style Sheets (CSS) is a style sheet language used for describing </p>
+    <p>the presentation of a document written in a markup language like HTML.</p>
+    <p>[1] CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.[2] </p>
+    <p>CSS is designed to enable the separation of presentation and content, </p>
+    <p>including layout, colors, and fonts.[3] This separation can improve content accessibility, </p>
+    <p>provide more flexibility and control in the specification of presentation characteristics,</p>
+    <p>enable multiple web pages to share formatting by specifying the relevant CSS in a separate </p>
+    <p>.css file, and reduce complexity and repetition in the structural content.</p>
   </body>
 </html>
