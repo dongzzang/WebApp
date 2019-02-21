@@ -4,14 +4,38 @@
     <meta charset="utf-8">
     <title>CSS Property Basic2</title>
     <style>
-      .a {font-size:32px;}
-      .b {font-size:2em;}
-      .c {font-size:large;}
-      .d {font-size:small;}
+      .a
+      {
+        font-size:32px;
+        font-family:"없는 글꼴", sans-serif, Arial;
+      }
+      .b{font-size:2em;}
+      .c
+      {
+        font-size:large;
+        font-family: "Times New Roman", serif, Arial;
+      }
+      .d
+      {
+         font-size:small;
+         font-weight:bold;
+       }
+       .font_big {font-size:2em;}
+       .font_italic {font-style:italic;}
+       .font_bold {font-weight:bold;}
+       .font_center {text-align:center;}
+       .font_right {text-align:right;}
+
     </style>
   </head>
   <body>
     <h1>HTML/ CSS/ JavaScript</h1>
+    <p class="font_big font_italic font_bold font_center">
+        Cascading Style Sheet
+    </p>
+    <span class="font_center"> HTML/CSS</span>
+    <!-- span tag경우 inline 형태이기 때문에 text-align 옵션이 설정되지 않는다.-->
+    <p class="font_bold font_right"> 2019. 02. 21</p>
     <p class="a">HTML/CSS/JavaScript</p>
     <p class="b">HTML/CSS/JavaScript</p>
     <p class="c">HTML/CSS/JavaScript</p>
