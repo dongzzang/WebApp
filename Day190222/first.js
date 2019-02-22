@@ -164,10 +164,125 @@ console.log(sam1);
 console.log(sam2);
 console.log(sam3);
 console.log(sam1 === sam2);
-console.log(sam3.classification.fmaily);
+console.log(sam3.classification.family);
 console.log(sam3["classification"].family);
 console.log(sam3.classification["family"]);
 console.log(sam3["classification"]["family"]);
 
 console.log("----------------------------------");
 console.log();
+
+sam3.speak = function() {return "Meow!"};
+console.log(sam3);
+console.log(sam3.speak());
+delete sam3.classification;
+console.log(sam3);
+delete sam3.speak;
+console.log(sam3);
+
+console.log("----------------------------------");
+console.log();
+var s = "hello";
+console.log(s.toUpperCase());
+
+s.rating = 3;
+console.log(s.rating);
+console.log("----------------------------------");
+console.log();
+
+var a1 = [1, 2, 3, 4];
+var a2 = [1,'two', 3, null];
+var a3 = ["What the hummer? What the chain?", "In what furnace was thy brain?",
+          "What the anvil? What dread grasp", "Dare its deadly terrors clasp?"];
+var a4 = [{name:"Ruby", hardness:9}, {name:"Diamond", hardness:10},
+          {name:"Topaz", hardness:8}];
+var a5 = [[1, 3, 5],[2, 4, 6]];
+console.log(a1);
+console.log(a2);
+console.log(a3);
+console.log(a4);
+console.log(a5);
+var arr = ['a', 'b', 'c'];
+console.log(arr);
+console.log(arr.length);
+console.log(arr[0]);
+console.log(arr[arr.length-1]);
+var arr2 = [1, 2, 'c', 4, 5];
+console.log(arr2);
+arr2[2] = 3;
+console.log(arr2);
+console.log("----------------------------------");
+console.log();
+
+var now = new Date();
+console.log(now);
+var halloween = new Date(2019, 9, 31);
+console.log(halloween);
+var halloweenParty = new Date(2019, 9, 31, 19, 0);
+console.log(halloweenParty);
+
+console.log(halloweenParty.getFullYear());
+console.log(halloweenParty.getMonth());
+console.log(halloweenParty.getDate());
+console.log(halloweenParty.getDay());
+console.log(halloweenParty.getHours());
+console.log(halloweenParty.getMinutes());
+console.log(halloweenParty.getSeconds());
+console.log(halloweenParty.getMilliseconds());
+console.log("----------------------------------");
+console.log();
+
+var numStr = "33.3";
+var num = Number(numStr);
+console.log(numStr);
+console.log(num);
+var a = parseInt("16 volts", 10);
+var b = parseInt("3a", 16);
+var c2 = parseFloat("15.5 kph");
+console.log(a)
+console.log(b)
+console.log(c2)
+var d = new Date();
+var ts = d.valueOf();
+console.log(d);
+console.log(ts);
+
+d2 = true;
+var n2 = b ? 1:0;
+console.log(d2);
+
+console.log("----------------------------------");
+console.log();
+
+var v = 33.5;
+var v2 = v.toString();
+console.log(a);
+console.log(v2);
+var arr9 = [1, true, "hello"];
+console.log(arr9);
+console.log(arr9.toString());
+var n9 = 0;
+var b9 = !!n9;
+var b10 = Boolean(n9);
+console.log(n9);
+console.log(b9);
+console.log(b10);
+
+console.log("----------------------------------");
+console.log();
+
+var xx = 5;
+var yy = 3 - -xx;
+console.log(`xx = ${xx} yy = ${yy}`);
+
+var ss = "5";
+var yyy = 3 + +ss;
+console.log(`ss = ${ss}yyy = ${yyy}`);
+
+var xx1 = 0, xx2 = 2, xx3 = -1.5, xx4 = -6.33;
+var p1 = -xx1*1;
+var p2 = +xx2*2;
+var p3 = +xx3*3;
+var p4 = -xx4*4;
+console.log(`\nxx1 = ${xx1} xx2 = ${xx2} xx3 = ${xx3} xx4 = ${xx4}`);
+console.log(`p1 = ${p1} p2 = ${p2} p3 = ${p3} p4 = ${p4}`);
