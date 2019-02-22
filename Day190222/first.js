@@ -150,3 +150,24 @@ console.log(obj);
 
 console.log("----------------------------------");
 console.log();
+
+var sam1 = {name:'Sam', age:4};
+var sam2 = {name:'Sam', age:4};
+var sam3 = {name:'Sam',
+            classification:{
+              kingdom:'Anamalia', phylum:'Chordata', class:'Mamalia',
+              order:'Carnivoria', family:'Felidas',sumfamily:'Felinae',
+              genus:'Felis',species:'catus'}
+            };
+
+console.log(sam1);
+console.log(sam2);
+console.log(sam3);
+console.log(sam1 === sam2);
+console.log(sam3.classification.fmaily);
+console.log(sam3["classification"].family);
+console.log(sam3.classification["family"]);
+console.log(sam3["classification"]["family"]);
+
+console.log("----------------------------------");
+console.log();
