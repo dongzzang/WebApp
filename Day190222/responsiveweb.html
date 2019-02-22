@@ -2,11 +2,24 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=2.0" />
+    <meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1.0" />
+                            <!--확대 축소 사용여부-->
     <title>Responsive Web</title>
     <style media="screen">
       h1 {text-align:center;}
       body {border:10px solid green; font-size:24px; padding:20px;}
+      @media screen and (max-width:767px)
+      {
+        body {background-color:gray;}
+      }
+      @media screen and (min-width:768px) and (max-width:959px)
+      {
+        body {background-color:green;}
+      }
+      @media screen and (min-width:960px)
+      {
+        body {background-color:blue;}
+      }
     </style>
   </head>
   <body>
