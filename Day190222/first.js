@@ -131,4 +131,22 @@ currentTemp2 = 19.5;
 console.log(currentTemp2);
 console.log(targetTemp2);
 currentTemp2 = undefined;
-console.log(currentTemp);
+console.log(currentTemp2);
+
+console.log("----------------------------------");
+console.log();
+var obj = {};
+console.log(obj);
+obj.color = "yellow";
+console.log(obj);
+// 없는 키를 생성함과 동시에 값까지 넣음
+obj["not an identifier"] = 3;
+console.log(obj);
+console.log(obj["not an identifier"]);
+console.log(obj["color"]);
+const SIZE = Symbol();
+obj[SIZE] = 8;
+console.log(obj);
+
+console.log("----------------------------------");
+console.log();
