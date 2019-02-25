@@ -214,11 +214,11 @@ console.log("===============================");
 console.log();
 
 var obj = {b1:2, c1:3, d1:4};
-var {a1,b1,c1} = obj;
+var {a1,b1,c1} = obj;   //변수 선언 및 초기화(해체 할당)
 console.log(`\na1=${a1}\tb1=${b1}\tc1=${c1}`);
 var obj2 = {b2:2, c2:3, d2:4};
-var a2, b2, c2;
-({a2, b2, c2} = obj2);
+var a2, b2, c2;         // 변수 선언
+({a2, b2, c2} = obj2);  //값 치환(해체 할당)
 console.log(`\na2=${a2}\tb2=${b2}\tc2=${c2}`);
 var arr= [1, 2, 3];
 var [x5, y5] = arr;
@@ -228,7 +228,94 @@ var [x6, y6, ...rest] = arr2;
 console.log(`\nx6 = ${x6}\ty6=${y6}\trest=${rest}`);
 var a5 = 5, b5 = 10;
 console.log(`\na5 = ${a5}\tb5=${b5}`);
+// 해체 할당을 이용하면 변수교환이 가능하다.(EC6부터 사용가능)
 [a5, b5] = [b5, a5];
 console.log(`\na5 = ${a5}\tb5=${b5}`);
 console.log("===============================");
 console.log();
+
+var totalVet;
+if(new Date().getDay() === 3)
+{
+  totalVet = 1;
+}
+else
+  {
+    totalVet = 2;
+  }
+console.log(`totalVet : ${totalVet}`);
+//피보나치 수열 계산
+for (var temp, i=0,j=1;i<30;temp=i,i=j,j=i+temp)
+{
+  console.log(j);
+}
+console.log();
+
+var s = '3';
+for(;s.length <10;s=' '+s);
+console.log(s);
+
+for(var x = 0.2;x<3.0;x+=0.2)
+{
+  console.log(x);
+}
+console.log("===============================");
+console.log();
+
+var player = {name:'Thomas', rank:'Midshipman', age:25};
+for(let prop in player)
+{
+  if(!player.hasOwnProperty(prop))
+  {
+    continue;
+  }
+  console.log(prop + ":"+player[prop]);
+}
+console.log();
+
+// in은 객체 of는 배열
+var hand = [5, 6, 7, 8];
+for(var ii=0;ii<hand.length;++ii)
+{
+  console.log(`face : ${hand[ii]}`);
+}
+for(var face of hand)
+{
+  console.log(`face : ${face}`);
+}
+
+var select = 1;
+if(select == 1) {
+  console.log("First");
+}
+else if(select == 2) {
+  console.log("Second");
+}
+else {
+  console.log("Other...")
+}
+
+switch(select){
+  case 1:
+    console.log("First");
+    break;
+  case 2:
+    console.log("Second");
+    break;
+  default:
+    console.log("Other...");
+    break
+}
+
+// 1. 1~10000 사이의 3의 배수와 5의 배수 개수를 출력하는 프로그램
+// 2. 20개의 data를 배열에 저장한 후 양수/음수, 양수일 때 짝수/ 홀수 개수를 출력하는 프로그램(배열 사용)
+// 3. 구구단을 출력하는 프로그램 (2단~ 9단)
+//      2단
+//      2x1 = 2
+//      2x2 = 4
+//      3단
+//      3x1 = 3
+// 4. 10명의 학생 성적을 출력하는 프로그램(object 사용)
+//     hong 50 50 50 150 50.0 Fail
+//     Kim 90 90 90 270 90.0 Excellent
+//     lee 70 70 70 210 70.0
