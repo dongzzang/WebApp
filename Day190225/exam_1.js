@@ -76,6 +76,8 @@ var school = [{name:'hong',국어:50,영어:50,수학:50},
               {name:'han',국어:80,영어:30,수학:100},
               {name:'jung',국어:100,영어:70,수학:80}];
 
+
+
 for (var i =0;i<10;i++){
   school[i].sum = school[i].국어+school[i].수학+school[i].영어;
   school[i].avg = Math.floor(school[i].sum/3);
@@ -91,3 +93,13 @@ for (var i =0;i<10;i++){
   }
   console.log(`${school[i].name} ${school[i].국어} ${school[i].영어} ${school[i].수학} ${school[i].sum} ${school[i].avg} ${school[i].grade}`);
 }
+
+/*
+
+var sum[0] = kor[0] + kor[0] +kor[0]
+var sum[1] = kor[1] + kor[1] +kor[1];
+..
+
+
+
+*/
