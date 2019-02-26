@@ -14,4 +14,6 @@ function getGreeting(){
   return "Hello world";
 }
 console.log(getGreeting());
+var message = getGreeting();
+console.log(message);
 console.log("========================================");
