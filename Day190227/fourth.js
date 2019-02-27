@@ -32,7 +32,7 @@ console.log(arr1.length);
 
 console.log(arr2[10]);
 console.log(arr2.length);
-console.log("====================================")
+console.log("====================================");
 
 let arr5 = new Array();
 
@@ -49,4 +49,24 @@ console.log(arr7);
 console.log(arr7.length);
 console.log(arr8);
 console.log(arr8.length);
-console.log("====================================")
+console.log("====================================");
+
+let arr9 = ["b", "c", "d"];
+console.log(arr9);
+// push를 하면 index가 출력
+// pop을 하면 값이 출력
+// 스택처럼 사용
+console.log(arr9.push("e"));
+console.log(arr9);
+
+console.log(arr9.pop());
+console.log(arr9);
+// unshift를 하면 index가 출력
+// shift를 하면 값이 출력
+// 큐 처럼 사용
+console.log(arr9.unshift("a"));
+console.log(arr9);
+
+console.log(arr9.shift());
+console.log(arr9);
+console.log("====================================");
