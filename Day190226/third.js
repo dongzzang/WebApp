@@ -190,7 +190,7 @@ var o8 = {
 };
 console.log(o8.greetBackwards());
 console.log("========================================");
-
+// => 는 람다식 표기법
 var f11 = function() {return "Hello!!!";}
 var f11_r = () => "Hello!!!";
 console.log(f11_r());
