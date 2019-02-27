@@ -181,3 +181,143 @@ console.log(arr15);
 arr15.sort((a, b) => a.name[1] < b.name[1]);
 console.log(arr15);
 console.log("====================================");
+
+const o = {name:"Jerry"};
+let arr16 = [1, 5, "a", o, true, 5, [1, 2], "9"];
+console.log(o);
+console.log(arr16);
+// indexOf와 lastIndexOf는 찾으려는 값을 1개밖에 찾지 못한다.
+// 찾을 값을 찾지못하면 -1을 return 한다.
+console.log(arr16.indexOf(5));
+console.log(arr16.lastIndexOf(5));
+console.log(arr16.indexOf("a"));
+console.log(arr16.lastIndexOf("a"));
+console.log(arr16.indexOf({name:"Jerry"}));
+console.log(arr16.indexOf(o));
+console.log(arr16.indexOf([1, 2]));
+console.log(arr16.indexOf("9"));
+console.log(arr16.indexOf(9));
+console.log("====================================");
+// indexOf와 lastIndexOf의 두번째 인자는 검색 시작 위치를 의미한다.
+console.log(arr16.indexOf("a", 5));
+console.log(arr16.indexOf(5, 5));
+console.log(arr16.lastIndexOf(5, 4));
+console.log(arr16.lastIndexOf(true, 3));
+console.log("====================================");
+
+let array = [1, 5, 2, 5, 4, 3, 5, 7, 6, 9, 10, 11];
+
+let searchResult = [];
+let cnt = 0;
+let i =0;
+
+// My Code
+while(true){
+  if(array.indexOf(5,cnt) == -1){
+    break;
+  }
+  else{
+    searchResult[i] = array.indexOf(5,cnt);
+    cnt = array.indexOf(5,searchResult[i]+1);
+    i++;
+  }
+}
+console.log(searchResult);
+
+// Teacher Code
+search = array.indexOf(5, 0);
+while (search !== -1){
+  searchResult.push(search);
+  search = array.indexOf(5, search + 1);
+}
+
+if(searchResult.length >0){
+  console.log(searchResult);
+}
+else{
+  console.log("data not found");
+}
+
+console.log("====================================");
+
+let arr17 = [{id:5, name:"Judith"}, {id:7,name:"Francis"}];
+console.log(arr17);
+// findIndex의 경우 검색 시작위치 지정을 할 수 없다.
+console.log(arr17.findIndex(o=>o.id === 5));
+console.log(arr17.findIndex(o=>o.name === "Francis"));
+console.log(arr17.findIndex(o=>o === 3));
+console.log(arr17.findIndex(o=>o.id === 17));
+// find의 경우 결과값이 index가 아닌 값이 출력된다.
+console.log(arr17.find(o=>o.id ===5));
+console.log(arr17.find(o=>o.id ===2));
+
+let arr18 = [1, 17, 16, 5, 4, 16, 10, 3, 49];
+
+console.log(arr18.find((x, i) =>i>2 && Number.isInteger(Math.sqrt(x))));
+console.log("====================================");
+
+let arr19 = [5, 7, 12, 15, 17];
+console.log(arr19.some(x =>x%2 === 0));
+console.log(arr19.some(x =>Number.isInteger(Math.sqrt(x))));
+
+let arr20 = [4, 6, 16, 36];
+// 홀수 가 없으면 true
+console.log(arr20.every(x =>x%2 === 0));
+console.log(arr20.every(x =>Number.isInteger(Math.sqrt(x))));
+console.log("====================================");
+
+// map은 배열을 가공해서 변형할 때 사용한다.
+let cart = [{name:"Widget", price:9.95}, {name:"Gadget", price:22.95}];
+console.log(cart);
+let names = cart.map(x => x.name);
+console.log(names);
+let prices = cart.map(x => x.price);
+console.log(prices);
+let discountPrices = prices.map(x=>x*0.8);
+console.log(discountPrices);
+
+let items = ["Widget", "Gadget"];
+let prices2 = [9.95, 22.95];
+console.log(items);
+console.log(prices2);
+// 원본배열을 이용하여 배열을 생성했다.
+let cart2 = items.map((x, i) => ({name:x, price:prices2[i]}));
+console.log(cart2);
+console.log("====================================");
+
+let cards = [];
+for(let suit of['H', 'C', 'D', 'S']){
+  for(let value = 1;value<=13;++value){
+    cards.push({suit, value});
+  }
+}
+console.log(cards);
+console.log();
+console.log(cards.filter(c=>c.value===2));
+console.log();
+console.log(cards.filter(c=>c.suit==='D'));
+console.log();
+console.log(cards.filter(c=>c.value===10));
+console.log();
+console.log(cards.filter(c=>c.value>10 && c.suit==='H'));
+console.log("====================================");
+
+let arr21 = [5, 7, 2, 4];
+// reduce 에서 a 는 누적 x는 요소 0은 초기값을 0으로 설정한다는 뜻
+let sum = arr21.reduce((a, x)=>a+=x, 0);
+//let sum = arr21.reduce((a + x)=>a+=x);
+console.log(arr21);
+console.log(sum);
+
+let words = ["BeachBall", "Rodeo", "Angel", "Avrdvark", "Xylophone", "November", "Chocolate"];
+let alphaetical = words.reduce((a, x)=>{
+      if(!a[x[0]]) a[x[0]] = [];
+      a[x[0]].push(x);
+      return a;
+}, {});
+
+console.log(words);
+console.log(alphaetical);
+
+let longWords = words.reduce((a, w)=>w.length > 6? a+" "+w:a,"").trim();
+console.log(longWords);
