@@ -73,3 +73,12 @@ class Car {
     this._userGear = gear;
   }
 }
+
+let car1 = new Car("Tesla", "Model S");
+let car2 = new Car("Mazda", "3i");
+
+car1.shift('D');
+car2.shift('R');
+
+console.log(car1.get_userGear());
+console.log(car2.get_userGear());
