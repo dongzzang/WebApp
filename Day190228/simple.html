@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Simple HTML</title>
     <style>
-      .callout {border:solid 1px $ff0080;}
+      .callout {border:solid 1px #ff0080}
       .code {background: #ccc;margin:1px 2px;padding:1px 4px;
             font-family:monospace;}
     </style>
@@ -26,14 +26,6 @@
         <p>A single HTML element can have multiple classes.</p>
       </div>
     </div>
-    <script>
-      function printDOM(node, prefix){
-        console.log(prefix + node.nodeName);
-        for (let i = 0;i < node.childNodes.length;++i){
-          printDOM(node.childNodes[i], prefix + '\t');
-        }
-      }
-      printDOM(document, '');
-    </script>
+    <script src="simple.js" > </script>
   </body>
 </html>
