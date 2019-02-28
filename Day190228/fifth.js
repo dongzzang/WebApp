@@ -131,8 +131,33 @@ person = {
 };
 
 var student = create_object(person);
+student.age = 28;
+student.getAge = function() {return this.age};
+
+console.log(student);
+console.log(student.getName());
+console.log(student.getAge());
 student.setName("me");
-student.toString = function() {return `|${this.name}`};
+student.toString = function() {return `|${this.name}|`};
 console.log(student);
 console.log(student.toString());
+console.log("===========================================");
+
+class Bus extends Car{
+  constructor(make, model, personnel){
+    super(make, model);
+    this.personnel = personnel;
+    console.log("Bus created!!!");
+  }
+
+  toString(){
+    let str = super.toString();
+    str+= `${this.personnel}|`;
+    return str;
+  }
+}
+
+let bus = new Bus("Hyundai", "Bus", 40);
+console.log(bus);
+console.log(bus.toString());
 console.log("===========================================");
