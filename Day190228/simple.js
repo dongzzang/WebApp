@@ -33,3 +33,45 @@ const firstChild = parent.childNodes[0];
 parent.insertBefore(p1, firstChild);
 parent.appendChild(p2);
 console.log(document.getElementById('content'));
+
+function highlightParas(containing){
+    if(typeof containing == 'string'){
+        containing = new RegExp(`\\b${containing}\\b`,'i');
+    }
+    const paras=document.getElementsByTagName('p');
+    console.log(paras);
+    for(let p of paras){
+        if(!containing.test(p.textContent)){
+            continue;
+        }
+        p.classList.add('highlight');
+    }
+}
+// highlightParas('unique');
+
+function removeParaHighlights(){
+  const paras = document.querySelectorAll('p.highlight');
+  for(let p of paras){
+    p.classList.remove('highlight');
+  }
+}
+
+const highlightActions = document.querySelectorAll('[data-action="highlight"]');
+console.log(highlightActions);
+console.log(highlightActions[0].dataset);
+highlightActions[0].dataset.containing = "unique";
+highlightActions[0].dataset.caseSensitive = "true";
+for(let a of highlightActions){
+  a.addEventListener('click',evt=>{
+    evt.preventDefault();
+    highlightParas(a.dataset.containing);
+    // highlightParas('unique');
+  });
+}
+const removeHighlightActions = document.querySelectorAll('[data-action="removeHighlights"]');
+for (let a of removeHighlightActions){
+  a.addEventListener('click', evt=>{
+    evt.preventDefault();
+    removeParaHighlights();
+  });
+}
