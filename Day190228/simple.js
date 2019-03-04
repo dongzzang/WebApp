@@ -55,7 +55,8 @@ function removeParaHighlights(){
     p.classList.remove('highlight');
   }
 }
-
+const insertValue = document.querySelectorAll('[data-action="submit"]');
+console.log(insertValue[0].dataset);
 const highlightActions = document.querySelectorAll('[data-action="highlight"]');
 console.log(highlightActions);
 console.log(highlightActions[0].dataset);

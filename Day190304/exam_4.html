@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Exam HTML</title>
+    <style>
+      .callout {border:solid 1px #ff0080}
+      .code {background: #ccc;margin:1px 2px;padding:1px 4px;
+            font-family:monospace;}
+      .highlight{
+        background: #ff0;
+        font-style:italic;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>성적 입력</h1>
+    </header>
+      이 름 : <input type="text"  name="name" /> <br />
+      1과목 : <input type="number" name="first_value" /> <br />
+      2과목 : <input type="number" name="second_value" /> <br />
+      3과목 : <input type="number" name="third_value" /> <br />
+      <button data-action="submit"> Submit</button>
+
+      <button data-action="output"> 입력 값 출력하기 </button>
+      <button data-action="rankoutput"> 평균순으로  출력하기 </button>
+      <div id="output"> </div>
+      <div id="rankoutput"> </div>
+      학생 검색 : <input type="text" name="find" />
+      <button data-action="find"> Submit</button>
+      <div id="findoutput"> </div>
+    <script src="exam_4.js" > </script>
+  </body>
+</html>
