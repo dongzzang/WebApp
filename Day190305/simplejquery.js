@@ -1,7 +1,19 @@
 $(document).ready(function() {
 
-  $("#txt:focus").css("background", "blue");
-  $("tr:not(.no)").css("background","#AAA");
+  $("td").filter(function(index){
+    return index % 3 == 0;
+  }).css("background", "red");
+  // $("td:nth-child(2n+1)").css("background", "red");
+  // $("td:first").css("background","red");
+  // $("td:first-child").css("background","red");
+  // $("td:last-child").css("background", "yellow");
+
+  $("li").css("margin", "5px");
+  $(":checked,:selected").css("border", "2px solid red");
+  $(":selected").css("background","red");
+
+  // $("#txt:focus").css("background", "blue");
+  // $("tr:not(.no)").css("background","#AAA");
   // $("tr:even").css("background", "#AAA");
 
   // $("tr:eq(0) > td:eq(7)").css("background","#EEE");
