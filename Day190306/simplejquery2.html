@@ -81,14 +81,28 @@
     <p></p> -->
 
     <!-- <input type="text" name="txtName" id="txtName" /> -->
-    <div id="mouse">AREA(DIV) MOUSE:<span id="result"></span></div>
+    <div id="mouse">AREA(DIV) MOUSE : <span id="resultenter"></span> <span id="resultleave"></span></div>
 
     <div>
       <input type="text" id="txtText" /><br />
       <input type="text" id="txtKeycode" />
     </div>
-
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <div class="print"> </div>
+    <div id="box"> </div>
+    <div>
+      <ul>
+        <li>list item 0</li>
+      </ul>
+      <input type="button" id="btnAdd" value="Add list element" />
+      <input type="button" id="btnDie" value="DIE list element" />
+    </div>
+    <button>Toggle</button>
+    <div class="page">
+      <h1>jQuery Effects</h1>
+      <p>The jQuery library provides several techniques
+          for adding animation to a web page</p>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.9.25/paper-full.min.js"></script>
     <script>
       // $( "div" ).click(function() {
@@ -143,24 +157,69 @@
       //     $(this).css({background:'',color:''});
       //   });
       // });
-      let count = 0;
+      // let countenter = 0;
+      // let countleave = 0;
+      // $(document).ready(function(){
+        // $("#mouse").bind("mouseenter mouseleave",function(e){
+        //   ++count;
+        //   $("#result").text(count+"enter or leave");
+        // });
+
+        // $("#mouse").bind("mouseenter mouseleave",function(e){
+        //   if(e.type==='mouseenter'){
+        //     ++countenter;
+        //     $("#resultenter").text(countenter+" enter");
+        //   }
+        //   else{
+        //     ++countleave;
+        //     $("#resultleave").text(countleave+" leave");
+        //   }
+        //
+        // });
+      //   let countenter = 0;
+      //   let countleave = 0;
+      //   $(document).ready(function(){
+      //     $("#box").css({
+      //       width:100, height:100, background:'orange'
+      //     }).on('click',function(){
+      //       $(this).css('background','red');
+      //     }).on('mouseenter',function(){
+      //       $(this).css('background','blue');
+      //     }).on('mouseleave',function(){
+      //       $(this).css('background','orange')
+      //     });
+      //     $("#btnDie").click(function(){
+      //       $("li").die();
+      //     });
+      //     $("#mouse").bind({
+      //       mouseenter:function(){++countenter;
+      //         $("#resultenter").text(countenter + " mouse enter");},
+      //       mouseleave:function(){++countleave;
+      //         $("#resultleave").text(countleave + " mouse leave");}
+      //     });
+      //     $("#txtText").keydown(function(e){
+      //       $("#txtKeycode").val(e.keyCode);
+      //     });
+      //     $("h1").click(function(){
+      //       $("div").html("<p>Event : click </p>");
+      //     });
+      //     $("h1").hover(function(){
+      //       $(this).css({background:'',color:''});
+      //     });
+      //     $("#btnAdd").click(function(){
+      //       $("ul").append('<li>list item add (' + $('li').length + ')</li>');
+      //     });
+      //     $("li").live("click",function(){
+      //       $(".print").html("<p>" + $(this).text() + "</p>");
+      //     });
+      //
+      // });
+
       $(document).ready(function(){
-        $("#txtText").keydown(function(e){
-          $("#txtKeycode").val(e.keyCode);
+        $("button").click(function(){
+          $(".page").fadeToggle("slow");
         });
-          $("h1").click(function(){
-            $("div").html("<p>Event : click </p>");
-          })
-          $("h1").hover(function(){
-            $(this).css({background:'',color:''});
-          });
-        $("#mouse").bind("mouseenter mouseleave",function(e){
-          ++count;
-          $("#result").text(count+"enter or leave");
-        });
-      });
-
-
+      })
     </script>
   </body>
 </html>
