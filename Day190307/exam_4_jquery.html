@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Exam HTML</title>
+    <style>
+      .callout {border:solid 1px #ff0080}
+      .code {background: #ccc;margin:1px 2px;padding:1px 4px;
+            font-family:monospace;}
+      .highlight{
+        background: #ff0;
+        font-style:italic;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>성적 입력</h1>
+    </header>
+      이 름 : <input type="text"  name="name" id="name"/> <br />
+      1과목 : <input type="number" name="first_value" id="first_value"/> <br />
+      2과목 : <input type="number" name="second_value" id="second_value"/> <br />
+      3과목 : <input type="number" name="third_value" id="third_value"/> <br />
+      <input type="button" id="submit" value="Submit" />
+
+      <input type="button" id="output" value="입력순으로 출력" />
+      <input type="button" id="rankoutput" value="평균순으로 출력" />
+      입력 값 순으로 출력
+      <div id="outputdiv"> </div>
+      평균 값 순으로 출력
+      <div id="rankoutputdiv"> </div>
+      학생 검색 : <input type="text" name="find" id = "findname"/>
+      <button data-action="find"> Submit</button>
+      <div id="findoutput"> </div>
+
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.9.25/paper-full.min.js"></script>
+    <script src="exam_4_jquery.js"></script>
+  </body>
+</html>
