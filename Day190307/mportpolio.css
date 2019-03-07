@@ -9,7 +9,7 @@ footer { position: fixed; bottom: 0px; }
 h1 { padding: 15px; font-size: 30px ; color: white; }
 h2 { font-size: 15px; color: white; }
 h3 { margin: 10px; font-size: 15px; color: green; text-shadow: 4px 4px 7px green; }
-h1, h2 { background-image: url(bg.jpg); background-repeat: repeat-x; }
+h1, h2 { background-image: url(./../media/bg.jpg); background-repeat: repeat-x; }
 
 img { border: 0; padding: 2px; }
 
@@ -22,7 +22,7 @@ nav > span > a:hover { background: #ff00ff; color: white; }
 	footer { clear: both; }
 }
 .content  { clear: both; }
-.section1 ul li { list-style-position: inside; list-style-image: url("li.jpg"); }
+.section1 ul li { list-style-position: inside; list-style-image: url("./../media/li.jpg"); }
 
 /* mintro.html 적용 스타일 */
 #stu-pic { width: 6em; height: 8em; float: left; }
@@ -30,7 +30,7 @@ nav > span > a:hover { background: #ff00ff; color: white; }
 /* minfo.html 적용 스타일 */
 #year-table { table-layout: auto; width: 80%; border-collapse: seperate; }
 #year-table thead { background: #E4F2D0; }
-#logo { position: fixed; top:130px; left: 70px; opacity: 0.3; } 
+#logo { position: fixed; top:130px; left: 70px; opacity: 0.3; }
 
 /* mstudy.html 적용 스타일 */
 video { margin: 5px; width: 300px; height: 200px; }
