@@ -10,15 +10,14 @@
 	<script src="http://code.jquery.com/mobile/1.1.2/jquery.mobile-1.1.2.min.js"></script>
 </head>
 <body>
-	<div data-role="page" id="page1">
 		<div data-role="header" data-position="fixed">
 		<h1>김동현 홈페이지</h1>
 		<div data-role="navbar">
 			<ul>
-				<li><a href="mcareer.html"> 경력 </a></li>
-				<li><a href="mstudy.html"> 학술 </a></li>
-				<li><a href="minfo.html"> 인적 </a></li>
-				<li><a href="mintro.html"> 소개 </a></li>
+				<li><a href="./mcareer.html" rel="external"> 경력 </a></li>
+				<li><a href="./mstudy.html" rel="external"> 학술 </a></li>
+				<li><a href="./minfo.html" rel="external"> 인적 </a></li>
+				<li><a href="./mintro.html" rel="external"> 소개 </a></li>
 			</ul>
 		</div>
 	</div>
@@ -45,29 +44,29 @@
 				</li>
 			</ul>
 		</section>
-		<img id="logo" src="./../media/logo.jpg"/>
-		<aside>
-			<h3>참조링크</h3>
-			<a href="http://www.naver.com">
-				<img class="portal" src="./../media/naver.jpg" alt="네이버이동"/>
-			</a>
-			<a href="http://www.google.com">
-				<img class="portal" src="./../media/google.jpg" alt="구글이동"/>
-			</a>
-			<a href="http://www.daum.net">
-				<img class="portal" src="./../media/daum.jpg" alt="다음이동"/>
-			</a>
-		</aside>
-  </div>
-	<div data-role="footer" data-position="fixed" data-id="footerid1">
-		<div data-role="navbar" >
-			<ul>
-				<li><a href="#" data-icon="plus">추가</a></li>
-				<li><a href="#" data-icon="minus">삭제</a></li>
-				<li><a href="#" data-icon="check" class="ui-btn-active ui-state-persist">확인</a></li>
-			</ul>
+
+		<div data-role="footer" data-position="fixed" data-id="footerid1">
+			<div data-role="navbar" >
+				<ul>
+					<li>
+						<a href="http://www.naver.com">
+						<img class="portal" src="./../media/naver.jpg" alt="네이버이동"/>
+						</a>
+					</li>
+					<li>
+						<a href="http://www.google.com">
+							<img class="portal" src="./../media/google.jpg" alt="구글이동"/>
+						</a>
+					</li>
+					<li>
+						<a href="http://www.daum.net">
+							<img class="portal" src="./../media/daum.jpg" alt="다음이동"/>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<h2>Copyright by KDH</h2>
 		</div>
-	</div>
 	</div>
 	</body>
 	</html>
