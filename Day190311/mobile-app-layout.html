@@ -12,16 +12,42 @@
     <div data-role="header">
         <h1>Page Title(Home)</h1>
         <br />
-        <div class="ui-body ui-body-a">
-          <h3>진달래</h3>
-          <p>참꽃 또는 두견화라고도 하며 전국의 50~2,000m 높이의 산야에서 무리지어 자란다.</p>
-        </div>
-        <br />
-        <div class="ui-body ui-body-a">
-          <h3>개나리</h3>
-          <p>연교 º 신리화라고도 하며, 북한에서는 개나리꽃나무라고 부른다.
-              산기슭 양지에서 많이 자란다.</p>
-        </div>
+        <div data-role="content">
+          <div data-role="collapsible">
+            <h3>접이식 패널 제목</h3>
+            <p>패널 내용1</p>
+          </div>
+          <div data-role="collapsible">
+            <h3>접이식 패널 제목</h3>
+            <p>패널 내용2</p>
+          </div>
+          <div class="ui-bar ui-bar-b"> 꽃나무 </div>
+          <br />
+          <div class="ui-body ui-body-a">
+            <h3>진달래</h3>
+            <p>참꽃 또는 두견화라고도 하며 전국의 50~2,000m 높이의 산야에서 무리지어 자란다.</p>
+          </div>
+          <br />
+          <div class="ui-body ui-body-a">
+            <h3>개나리</h3>
+            <p>연교 ● 신리화라고도 하며, 북한에서는 개나리꽃나무라고 부른다.
+                산기슭 양지에서 많이 자란다.</p>
+          </div>
+          <!--  행열 2행 2열짜리 -->
+          <!--  1행 2열 *2개 (2행 2열)-->
+          <div class="ui-grid-a">
+            <div class="ui-block-a"> Block 1 -1 </div>
+            <div class="ui-block-b"> Block 1 -2 </div>
+            <div class="ui-block-a"> Block 2 -1 </div>
+            <div class="ui-block-b"> Block 2 -2 </div>
+          </div>
+          <!--  1행 2열 -->
+          <!-- grid-a는 2열  / grid-b는 3열  / grid-c는 4열  / grid-d는 5열 -->
+          <div class="ui-grid-a">
+            <div class="ui-block-a"> <button>Button 1</button> </div>
+            <div class="ui-block-b"> <button>Button 2</button> </div>
+          </div>
+      </div>
     </div>
   </body>
 </html>
