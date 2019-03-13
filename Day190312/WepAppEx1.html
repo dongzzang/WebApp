@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>WepAppEx1</title>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+  <div data-role="page">
+    <div data-role="panel" id="panel1" data-display="overlay" data-theme="b">
+  		<form name="append1">
+  			<h3>글 등록</h3>
+  			<div class="ui-body ui-body-b gap">
+  				<label for="tablename1">제목  : </label>
+  			 	<input type="text" name="tablename1" id="tablename1" data-mini="true"/>
+  			 	<label for="tabletime1">작성일 : </label>
+  				<input type="text" name="tabletime1" id="tabletime1" data-mini="true" placeholder="예) 19/12/16"/>
+  				<label for="txtarea1">내용 : </label>
+  				<textarea cols="25" rows="5" id="txtarea1"></textarea>
+  			</div>
+  			<div class="ui-body">
+  				<fieldset class="ui-grid-a">
+  					<div class="ui-block-a">
+              <input type="button" id="btnAdd" value="추가"/>
+  					</div>
+  					<div class="ui-block-b">
+              <input type="reset" id="btnAddCancel" value="취소"/>
+  					</div>
+  				</fieldset>
+  			</div>
+  		</form>
+    </div>
+    <div data-role="panel" id="panel2" data-display="overlay" data-theme="c" data-position="right">
+      <form name="remove">
+        <h3>글 삭제</h3>
+        <div class="ui-body ui-body-b gap">
+          <label for="tablename1">제목  : </label>
+          <input type="text" name="tablename1" id="tablename1" data-mini="true"/>
+          <label for="tabletime1">작성일 : </label>
+          <input type="text" name="tabletime1" id="tabletime1" data-mini="true" placeholder="예) 19/03/12"/>
+        </div>
+        <div class="ui-body">
+          <fieldset class="ui-grid-a">
+            <div class="ui-block-a">
+              <input type="button" id="btnremove" value="삭제"/>
+            </div>
+            <div class="ui-block-b">
+              <input type="reset" id="btnremoveCancel" value="취소"/>
+            </div>
+          </fieldset>
+        </div>
+      </form>
+    </div>
+
+    <div data-role="header">
+      <h1>나의 게시판</h1>
+    </div>
+    <div data-role="content">
+      <fieldset class="ui-grid-c">
+        <div class="ui-block-b">
+          <input type="text" name="findname" id="findname" data-mini="true" placeholder="예) 김동현"/>
+        </div>
+        <div class="ui-block-c">
+          <input type="button" id="btnfind" value="검색">
+        </div>
+        </fieldset>
+        <div id="finddiv">
+          <p>검색 결과</p>
+          <table border = "1">
+
+          </table>
+        </div>
+
+
+      <div id="outputdiv">
+        <p>테이블 결과</p>
+        <table border="1">
+          <tr>
+          <td>순번</td>
+          <td>  제목</td>
+          <td>작성일자</td>
+          </tr>
+        </table>
+      </div>
+      <a href="#panel1" data-role="button" data-inline="true">글쓰기</a>
+      <a href="#panel2" data-role="button" data-inline="true">삭제</a>
+
+    </div>
+    <div data-role="footer" data-position="fixed">
+      <h4>copyright by 동현</h4>
+    </div>
+  </div>
+    <script src="./WepAppEx1.js"></script>
+  </body>
+</html>
