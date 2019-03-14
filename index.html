@@ -4,318 +4,334 @@
     <head>
         <meta charset="utf-8">
         <title>DH Web Project</title>
-        <!-- <base href="https://dongzzang.github.io/WebApp/" /> -->
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link type="text/css" rel="stylesheet" href="./main.css" />
         <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.2/jquery.mobile-1.1.2.min.css" />
         <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
         <script src="http://code.jquery.com/mobile/1.1.2/jquery.mobile-1.1.2.min.js"></script>
+
+        <script language="JavaScript">
+
+        function setDisplay(name,value) {
+        document.getElementById(name).style.display = value;
+        }
+
+        </script>
         </head>
     <body>
       <header id="header">
-        <h1><a href = "">DH Web</a></h1>
+        <h1><a href = "./index.html" rel="external" rel="external">DH Web</a></h1>
         <p> 이 페이지는 Kh정보교육원 지능형 IoT 플랫폼 취약점 </p>
         <p>분석 및 해킹/보안 전문가 양성과정 1회차</p>
         <p>과정중 웹개발을 위한 예제모음 페이지 입니다.</p>
         <hr / >
+        <A href="#" onClick="setDisplay('Content','block'); return false;">MyProfile</a>
+
+
       </header>
       <div class="top_bar">
-        <a href="#header">맨 위로 </a> <br/>
-        <a href="#190215">19-02-15 Ex</a> <br/>
-        <a href="#190218">19-02-18 Ex</a> <br/>
-        <a href="#190219">19-02-19 Ex</a> <br/>
-        <a href="#190220">19-02-20 Ex</a> <br/>
-        <a href="#190221">19-02-21 Ex</a> <br/>
-        <a href="#190222">19-02-22 Ex</a> <br/>
-        <a href="#190225">19-02-25 Ex</a> <br/>
-        <a href="#190226">19-02-26 Ex</a> <br/>
-        <a href="#190227">19-02-27 Ex</a> <br/>
-        <a href="#190228">19-02-28 Ex</a> <br/>
-        <a href="#190304">19-03-04 Ex</a> <br/>
-        <a href="#190305">19-03-05 Ex</a> <br/>
-        <a href="#190306">19-03-06 Ex</a> <br/>
-        <a href="#190307">19-03-07 Ex</a> <br/>
-        <a href="#190308">19-03-08 Ex</a> <br/>
-        <a href="#190311">19-03-11 Ex</a> <br/>
-        <a href="#190312">19-03-12 Ex</a> <br/>
+        <a href="#header" rel="external">맨 위로 </a> <br/>
+        <a href="#190215" rel="external">19-02-15 Ex</a> <br/>
+        <a href="#190218" rel="external">19-02-18 Ex</a> <br/>
+        <a href="#190219" rel="external">19-02-19 Ex</a> <br/>
+        <a href="#190220" rel="external">19-02-20 Ex</a> <br/>
+        <a href="#190221" rel="external">19-02-21 Ex</a> <br/>
+        <a href="#190222" rel="external">19-02-22 Ex</a> <br/>
+        <a href="#190225" rel="external">19-02-25 Ex</a> <br/>
+        <a href="#190226" rel="external">19-02-26 Ex</a> <br/>
+        <a href="#190227" rel="external">19-02-27 Ex</a> <br/>
+        <a href="#190228" rel="external">19-02-28 Ex</a> <br/>
+        <a href="#190304" rel="external">19-03-04 Ex</a> <br/>
+        <a href="#190305" rel="external">19-03-05 Ex</a> <br/>
+        <a href="#190306" rel="external">19-03-06 Ex</a> <br/>
+        <a href="#190307" rel="external">19-03-07 Ex</a> <br/>
+        <a href="#190308" rel="external">19-03-08 Ex</a> <br/>
+        <a href="#190311" rel="external">19-03-11 Ex</a> <br/>
+        <a href="#190312" rel="external">19-03-12 Ex</a> <br/>
+      </div>
+      <div id="Content" style="display:none;"><iframe src="./index.html"></iframe></div>
+      <div id="leftbar">
+        <div id="190215">
+          <h2>2019 - 02 - 15</h2>
+          <ul>
+            <li>
+                <a href = "./first exam.html" rel="external" rel="external">First test</a>
+            </li>
+          </ul>
+        </div>
+        <div id="190218">
+          <h2>2019 - 02 - 18</h2>
+          <ul>
+            <li>
+                <a href = "./Day190218/htmlTest.html" rel="external" rel="external">HTML Test</a>
+            </li>
+            <li>
+                <a href = "./Day190218/tag.html" rel="external" rel="external">TAG Test</a>
+            </li>
+            <li>
+                <a href = "./Day190218/Python.html" rel="external" rel="external">Python 프로그래밍</a>
+            </li>
+            <li>
+                <a href = "./Day190218/IoT_Sensor_Control.html" rel="external" rel="external">IoT 센서 제어 프로그래밍</a>
+            </li>
+            <li>
+                <a href = "./Day190218/IoT_Network.html" rel="external" rel="external">IoT 네트워크 프로그래밍</a>
+            </li>
+          </ul>
+        </div>
+        <div id="190219">
+          <h2>2019 - 02 - 19</h2>
+          <ul>
+            <li>
+                <a href = "./Day190219/0.html" rel="external" rel="external">Web Tag Test</a>
+            </li>
+            <li>
+                <a href = "./Day190219/table1.html" rel="external" rel="external">Table Test</a>
+            </li>
+            <li>
+                <a href = "./Day190219/table2.html" rel="external" rel="external">Time Table Test</a>
+            </li>
+            <li>
+                <a href = "./Day190219/table3.html" rel="external" rel="external">홍차</a>
+            </li>
+            <li>
+                <a href = "./Day190219/exam14.html" rel="external" rel="external">이력서 예제</a>
+            </li>
+            <li>
+                <a href = "./Day190219/division.html" rel="external" rel="external">division</a>
+            </li>
+            <li>
+                <a href = "./Day190219/division2.html" rel="external" rel="external">division2</a>
+            </li>
+            <li>
+                <a href = "./Day190219/semantic.html" rel="external" rel="external">semantic</a>
+            </li>
+          </ul>
+        </div>
+        <div id="190220">
+            <h2>2019 - 02 - 20</h2>
+            <ul>
+              <li>
+                  <a href = "./Day190220/multimedia.html" rel="external" rel="external">multimedia</a>
+              </li>
+              <li>
+                  <a href = "./Day190220/input.html" rel="external" rel="external">input</a>
+              </li>
+              <li>
+                  <a href = "./Day190220/exam7.html" rel="external" rel="external">exam7</a>
+              </li>
+              <li>
+                  <a href = "./Day190220/css.html" rel="external" rel="external">css</a>
+              </li>
+              <li>
+                  <a href = "./Day190220/css1.html" rel="external" rel="external">css1</a>
+              </li>
+              <li>
+                  <a href = "./Day190220/css2.html" rel="external" rel="external">css2</a>
+              </li>
+              <li>
+                  <a href = "./Day190220/css3.html" rel="external" rel="external">css3</a>
+              </li>
+              <li>
+                  <a href = "./Day190220/css4.html" rel="external" rel="external">css4</a>
+              </li>
+              <li>
+                  <a href = "./Day190220/css5.html" rel="external" rel="external">css5</a>
+              </li>
+              <li>
+                  <a href = "./Day190220/css-property.html" rel="external" rel="external">css-property</a>
+              </li>
+            </ul>
+        </div>
+        <div id="190221">
+            <h2>2019 - 02 - 21</h2>
+            <ul>
+              <li>
+                  <a href = "./Day190221/css-property.html" rel="external" rel="external">css-property</a>
+              </li>
+              <li>
+                  <a href = "./Day190221/css-property2.html" rel="external">css-property2</a>
+              </li>
+              <li>
+                  <a href = "./Day190221/css-property3.html" rel="external" rel="external">css-property3</a>
+              </li>
+              <li>
+                  <a href = "./Day190221/css-property4.html" rel="external" rel="external">css-property4</a>
+              </li>
+              <li>
+                  <a href = "./Day190221/css-property5.html" rel="external" rel="external">css-property5</a>
+              </li>
+              <li>
+                  <a href = "./Day190221/css-layout.html" rel="external" rel="external">css-layout</a>
+              </li>
+              <li>
+                  <a href = "./Day190221/css-layout2.html" rel="external" rel="external">css-layout2</a>
+              </li>
+              <li>
+                  <a href = "./Day190221/0.html" rel="external" rel="external">Web Test by CSS</a>
+              </li>
+            </ul>
+        </div>
+        <div id="190222">
+            <h2>2019 - 02 - 22</h2>
+            <ul>
+              <li>
+                  <a href = "./Day190222/responsiveweb.html" rel="external" rel="external">Responsiveweb</a>
+              </li>
+              <li>
+                  <a href = "./Day190222/first.js" rel="external">first_js</a>
+              </li>
+            </ul>
+        </div>
+        <div id="190225">
+            <h2>2019 - 02 - 25</h2>
+            <ul>
+              <li>
+                  <a href = "./Day190225/second.js" rel="external">second_js</a>
+              </li>
+              <li>
+                  <a href = "./Day190225/exam_1.js" rel="external">exam_1_js</a>
+              </li>
+            </ul>
+        </div>
+        <div id="190226">
+            <h2>2019 - 02 - 26</h2>
+            <ul>
+              <li>
+                  <a href = "./Day190226/third.js" rel="external">third_js</a>
+              </li>
+              <li>
+                  <a href = "./Day190226/exam_2.js" rel="external">exam_2_js</a>
+              </li>
+            </ul>
+        </div>
+        <div id="190227">
+            <h2>2019 - 02 - 27</h2>
+            <ul>
+              <li>
+                  <a href = "./Day190227/fourth.js" rel="external">fourth_js</a>
+              </li>
+              <li>
+                  <a href = "./Day190227/exam_3.js" rel="external">exam_3_js</a>
+              </li>
+            </ul>
+        </div>
+        <div id="190228">
+            <h2>2019 - 02 - 28</h2>
+            <ul>
+              <li>
+                  <a href = "./Day190228/fifth.js" rel="external">fifth_js</a>
+              </li>
+              <li>
+                  <a href = "./Day190228/simple.html" rel="external" rel="external">simple</a>
+              </li>
+            </ul>
+        </div>
+        <div id="190304">
+            <h2>2019 - 03 - 04</h2>
+            <ul>
+              <li>
+                  <a href = "./Day190304/exam_4.html" rel="external" rel="external">exam_4</a>
+              </li>
+            </ul>
+        </div>
+        <div id="190305">
+            <h2>2019 - 03 - 05</h2>
+            <ul>
+              <li>
+                  <a href = "./Day190305/scoretable.html" rel="external" rel="external">exam_4_teacher</a>
+              </li>
+              <li>
+                  <a href = "./Day190305/simplejquery.html" rel="external" rel="external">simplejquery</a>
+              </li>
+            </ul>
+        </div>
+        <div id="190306">
+            <h2>2019 - 03 - 06</h2>
+            <ul>
+              <li>
+                  <a href = "./Day190306/simplejquery2.html" rel="external" rel="external">simplejquery2</a>
+              </li>
+            </ul>
+        </div>
+        <div id="190307">
+            <h2>2019 - 03 - 07</h2>
+            <ul>
+              <li>
+                  <a href = "./Day190307/exam_4_jquery.html" rel="external" rel="external">exam_4_jquery</a>
+              </li>
+              <li>
+                  <a href = "./Day190307/mobile-media.html" rel="external" rel="external">mobile-media</a>
+              </li>
+              <li>
+                  <a href = "./Day190307/mintro.html" rel="external" rel="external">mintro</a>
+              </li>
+              <li>
+                  <a href = "./Day190307/mobile-media.html" rel="external" rel="external">mobile-media</a>
+              </li>
+            </ul>
+        </div>
+        <div id="190308">
+            <h2>2019 - 03 - 08</h2>
+            <ul>
+              <li>
+                  <a href = "./Day190308/mobile-app.html" rel="external" rel="external">mobile-app</a>
+              </li>
+              <li>
+                  <a href = "./Day190308\mobile-app-header.html" rel="external" rel="external">mobile-app-header</a>
+              </li>
+              <li>
+                  <a href = "./Day190308\divi-fullscreen.html" rel="external" rel="external">divi-fullscreen</a>
+              </li>
+              <li>
+                  <a href = "./Day190308\mypopol.html" rel="external" rel="external">mypopol</a>
+              </li>
+              <li>
+                  <a href = "./Day190308\mobile-app-btnliv.html" rel="external" rel="external">mobile-app-btnliv</a>
+              </li>
+            </ul>
+        </div>
+        <div id="190311">
+            <h2>2019 - 03 - 11</h2>
+            <ul>
+              <li>
+                  <a href = "./Day190311/count-bubble.html" rel="external" rel="external">count-bubble</a>
+              </li>
+              <li>
+                  <a href = "./Day190311/dialog.html" rel="external" rel="external">dialog</a>
+              </li>
+              <li>
+                  <a href = "./Day190311/hidden-panel.html" rel="external" rel="external">hidden-panel</a>
+              </li>
+              <li>
+                  <a href = "./Day190311/listview-basic.html" rel="external" rel="external">listview-basic</a>
+              </li>
+              <li>
+                  <a href = "./Day190311/mobile-app-layout.html" rel="external" rel="external">mobile-app-layout</a>
+              </li>
+              <li>
+                  <a href = "./Day190311/mobile-app-tab.html" rel="external">mobile-app-tab</a>
+              </li>
+              <li>
+                  <a href = "./Day190311/dokdo-intro.html" rel="external">dokdo-intro</a>
+              </li>
+            </ul>
+        </div>
+        <div id="190312">
+            <h2>2019 - 03 - 12</h2>
+            <ul>
+              <li>
+                  <a href = "./Day190312/.html" rel="external"></a>
+              </li>
+            </ul>
+        </div>
       </div>
 
-      <nav id="190215">
-        <h2>2019 - 02 - 15</h2>
-        <ul>
-          <li>
-              <a href = "./first exam.html">First test</a>
-          </li>
-        </ul>
-      <nav id="190218">
-        <h2>2019 - 02 - 18</h2>
-        <ul>
-          <li>
-              <a href = "./Day190218/htmlTest.html">HTML Test</a>
-          </li>
-          <li>
-              <a href = "./Day190218/tag.html">TAG Test</a>
-          </li>
-          <li>
-              <a href = "./Day190218/Python.html">Python 프로그래밍</a>
-          </li>
-          <li>
-              <a href = "./Day190218/IoT_Sensor_Control.html">IoT 센서 제어 프로그래밍</a>
-          </li>
-          <li>
-              <a href = "./Day190218/IoT_Network.html">IoT 네트워크 프로그래밍</a>
-          </li>
-        </ul>
-      </nav>
-      <nav id="190219">
-        <h2>2019 - 02 - 19</h2>
-        <ul>
-          <li>
-              <a href = "./Day190219/0.html">Web Tag Test</a>
-          </li>
-          <li>
-              <a href = "./Day190219/table1.html">Table Test</a>
-          </li>
-          <li>
-              <a href = "./Day190219/table2.html">Time Table Test</a>
-          </li>
-          <li>
-              <a href = "./Day190219/table3.html">홍차</a>
-          </li>
-          <li>
-              <a href = "./Day190219/exam14.html">이력서 예제</a>
-          </li>
-          <li>
-              <a href = "./Day190219/division.html">division</a>
-          </li>
-          <li>
-              <a href = "./Day190219/division2.html">division2</a>
-          </li>
-          <li>
-              <a href = "./Day190219/semantic.html">semantic</a>
-          </li>
-        </ul>
-      </nav>
-      <nav id="190220">
-          <h2>2019 - 02 - 20</h2>
-          <ul>
-            <li>
-                <a href = "./Day190220/multimedia.html">multimedia</a>
-            </li>
-            <li>
-                <a href = "./Day190220/input.html">input</a>
-            </li>
-            <li>
-                <a href = "./Day190220/exam7.html">exam7</a>
-            </li>
-            <li>
-                <a href = "./Day190220/css.html">css</a>
-            </li>
-            <li>
-                <a href = "./Day190220/css1.html">css1</a>
-            </li>
-            <li>
-                <a href = "./Day190220/css2.html">css2</a>
-            </li>
-            <li>
-                <a href = "./Day190220/css3.html">css3</a>
-            </li>
-            <li>
-                <a href = "./Day190220/css4.html">css4</a>
-            </li>
-            <li>
-                <a href = "./Day190220/css5.html">css5</a>
-            </li>
-            <li>
-                <a href = "./Day190220/css-property.html">css-property</a>
-            </li>
-          </ul>
-      </nav>
-      <nav id="190221">
-          <h2>2019 - 02 - 21</h2>
-          <ul>
-            <li>
-                <a href = "./Day190221/css-property.html">css-property</a>
-            </li>
-            <li>
-                <a href = "./Day190221/css-property2.html">css-property2</a>
-            </li>
-            <li>
-                <a href = "./Day190221/css-property3.html">css-property3</a>
-            </li>
-            <li>
-                <a href = "./Day190221/css-property4.html">css-property4</a>
-            </li>
-            <li>
-                <a href = "./Day190221/css-property5.html">css-property5</a>
-            </li>
-            <li>
-                <a href = "./Day190221/css-layout.html">css-layout</a>
-            </li>
-            <li>
-                <a href = "./Day190221/css-layout2.html">css-layout2</a>
-            </li>
-            <li>
-                <a href = "./Day190221/0.html">Web Test by CSS</a>
-            </li>
-          </ul>
-      </nav>
-      <nav id="190222">
-          <h2>2019 - 02 - 22</h2>
-          <ul>
-            <li>
-                <a href = "./Day190222/responsiveweb.html">Responsiveweb</a>
-            </li>
-            <li>
-                <a href = "./Day190222/first.js">first_js</a>
-            </li>
-          </ul>
-      </nav>
-      <nav id="190225">
-          <h2>2019 - 02 - 25</h2>
-          <ul>
-            <li>
-                <a href = "./Day190225/second.js">second_js</a>
-            </li>
-            <li>
-                <a href = "./Day190225/exam_1.js">exam_1_js</a>
-            </li>
-          </ul>
-      </nav>
-      <nav id="190226">
-          <h2>2019 - 02 - 26</h2>
-          <ul>
-            <li>
-                <a href = "./Day190226/third.js">third_js</a>
-            </li>
-            <li>
-                <a href = "./Day190226/exam_2.js">exam_2_js</a>
-            </li>
-          </ul>
-      </nav>
-      <nav id="190227">
-          <h2>2019 - 02 - 27</h2>
-          <ul>
-            <li>
-                <a href = "./Day190227/fourth.js">fourth_js</a>
-            </li>
-            <li>
-                <a href = "./Day190227/exam_3.js">exam_3_js</a>
-            </li>
-          </ul>
-      </nav>
-      <nav id="190228">
-          <h2>2019 - 02 - 28</h2>
-          <ul>
-            <li>
-                <a href = "./Day190228/fifth.js">fifth_js</a>
-            </li>
-            <li>
-                <a href = "./Day190228/simple.html">simple</a>
-            </li>
-          </ul>
-      </nav>
-      <nav id="190304">
-          <h2>2019 - 03 - 04</h2>
-          <ul>
-            <li>
-                <a href = "./Day190304/exam_4.html">exam_4</a>
-            </li>
-          </ul>
-      </nav>
-      <nav id="190305">
-          <h2>2019 - 03 - 05</h2>
-          <ul>
-            <li>
-                <a href = "./Day190305/scoretable.html">exam_4_teacher</a>
-            </li>
-            <li>
-                <a href = "./Day190305/simplejquery.html">simplejquery</a>
-            </li>
-          </ul>
-      </nav>
-      <nav id="190306">
-          <h2>2019 - 03 - 06</h2>
-          <ul>
-            <li>
-                <a href = "./Day190306/simplejquery2.html">simplejquery2</a>
-            </li>
-          </ul>
-      </nav>
-      <nav id="190307">
-          <h2>2019 - 03 - 07</h2>
-          <ul>
-            <li>
-                <a href = "./Day190307/exam_4_jquery.html">exam_4_jquery</a>
-            </li>
-            <li>
-                <a href = "./Day190307/mobile-media.html">mobile-media</a>
-            </li>
-            <li>
-                <a href = "./Day190307/mintro.html">mintro</a>
-            </li>
-            <li>
-                <a href = "./Day190307/mobile-media.html">mobile-media</a>
-            </li>
-          </ul>
-      </nav>
-      <nav id="190308">
-          <h2>2019 - 03 - 08</h2>
-          <ul>
-            <li>
-                <a href = "./Day190308/mobile-app.html">mobile-app</a>
-            </li>
-            <li>
-                <a href = "./Day190308\mobile-app-header.html">mobile-app-header</a>
-            </li>
-            <li>
-                <a href = "./Day190308\navi-fullscreen.html">navi-fullscreen</a>
-            </li>
-            <li>
-                <a href = "./Day190308\mypopol.html">mypopol</a>
-            </li>
-            <li>
-                <a href = "./Day190308\mobile-app-btnliv.html">mobile-app-btnliv</a>
-            </li>
-          </ul>
-      </nav>
-      <nav id="190311">
-          <h2>2019 - 03 - 11</h2>
-          <ul>
-            <li>
-                <a href = "./Day190311/count-bubble.html">count-bubble</a>
-            </li>
-            <li>
-                <a href = "./Day190311/dialog.html">dialog</a>
-            </li>
-            <li>
-                <a href = "./Day190311/hidden-panel.html">hidden-panel</a>
-            </li>
-            <li>
-                <a href = "./Day190311/listview-basic.html">listview-basic</a>
-            </li>
-            <li>
-                <a href = "./Day190311/mobile-app-layout.html">mobile-app-layout</a>
-            </li>
-            <li>
-                <a href = "./Day190311/mobile-app-tab.html">mobile-app-tab</a>
-            </li>
-            <li>
-                <a href = "./Day190311/dokdo-intro.html">dokdo-intro</a>
-            </li>
-          </ul>
-      </nav>
-      <nav id="190312">
-          <h2>2019 - 03 - 12</h2>
-          <ul>
-            <li>
-                <a href = "./Day190312/.html"></a>
-            </li>
-          </ul>
-      </nav>
 
       <footer>Copyright by KimDongHyun</footer>
         <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.2/jquery.mobile-1.1.2.min.css" />
-        <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
-        <script src="http://code.jquery.com/mobile/1.1.2/jquery.mobile-1.1.2.min.js"></script>
+        <script src="http://code.jquery.com/jquery-1.7.2.min.js" rel="external"></script>
+        <script src="http://code.jquery.com/mobile/1.1.2/jquery.mobile-1.1.2.min.js" rel="external"></script>
     </body>
 </html>

@@ -3,10 +3,10 @@
 let arr = new Array();
 let i = 0;
 $("#btnAdd").click(function(){
-  arr[i] = ({name:$("#tablename1").val(), time:$("#tabletime1").val(), text:$("#txtarea1").val()});
+  arr[i] = ({name:$("#tablename1").val(), time:$("#tabletime1").val(), text:$("#txtarea1").val(), count:i+1});
   i++;
   console.log(arr);
-  $("#outputdiv > table").append('<tr><td>' + i + '</td>' + '<td>' + arr[i-1].name +  '</td>'+ '<td>' + arr[i-1].time  +  '</td></tr>');
+  $("#outputdiv > table").append('<tr><td>' + i + '</td>' + '<td><a href="#" onclick="clickname()">' + arr[i-1].name +  '</a></td>'+ '<td>' + arr[i-1].time  +  '</td></tr>');
 
 });
 $("#btnremove").click(function(){
@@ -26,7 +26,11 @@ $("#btnfind").click(function(){
   $("#finddiv > table").empty();
   for(let j = 0;j<i;j++){
     if(arr[j].name == findname1){
-      $("#finddiv > table").append('<tr><td>' + (parseInt(j)+1) + '</td>' + '<td>' + arr[j].name +  '</td>'+ '<td>' + arr[j].time  +  '</td></tr>');
+      $("#finddiv > table").append('<tr><td>' + (parseInt(j)+1) + '</td>' + '<td><a href="#" onclick="clickname()">' + arr[j].name +  '</a></td>'+ '<td>' + arr[j].time  +  '</td></tr>');
     }
   }
 });
+
+function clickname(){
+  alert("hello");
+}

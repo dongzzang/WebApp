@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>HTML5 개인 포트폴리오 홈페이지</title>
+	<link rel="stylesheet" href="mportpolio.css"/>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.2/jquery.mobile-1.1.2.min.css" />
+	<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.2/jquery.mobile-1.1.2.min.js"></script>
+</head>
+<body>
+		<div data-role="header" data-position="fixed" id="head">
+		<h1>김동현 홈페이지</h1>
+		<div data-role="navbar">
+			<ul>
+				<li><a href="./mbang.html" rel="external"> 한줄 </a></li>
+				<li><a href="./mstudy.html" rel="external"> 학술 </a></li>
+				<li><a href="./minfo.html" rel="external"> 인적 </a></li>
+				<li><a href="./mintro.html" rel="external"> 소개 </a></li>
+			</ul>
+		</div>
+	</div>
+  <div data-role="content">
+		<section class="section1">
+			<h3>인적사항</h3>
+			<ul>
+				<li>성    명 : 김동현</li>
+				<li>생년월일 : 1996. 02. 04</li>
+				<li>주    소 : 경기도 파주시 ***</li>
+				<li>연 락 처 : 010-1234-5678</li>
+				<li>학    력
+				<table id="year-table" border="1">
+					<thead>
+						<tr>	<th>졸업년도</th> <th>출신학교</th></tr>
+					</thead>
+					<tbody>
+						<tr>	<td>2008. 2</td><td> **초등학교 졸업</td>	</tr>
+						<tr>	<td>2011. 2.</td><td> **중학교 졸업</td>	</tr>
+						<tr>	<td>2014. 2.</td><td> **고등학교 졸업</td></tr>
+						<tr>	<td>2019. 2.</td><td> **대학교 컴퓨터공학과 졸업</td></tr>
+					</tbody>
+				</table>
+				</li>
+			</ul>
+		</section>
+
+		<div data-role="footer" data-position="fixed" data-id="footerid1">
+			<div data-role="navbar" >
+				<ul>
+					<li>
+						<a href="https://dongzzang.github.io/WebApp/">
+						<img class="portal" src="./../media/dh.PNG" alt="예제페이지"/>
+						</a>
+					</li>
+					<li>
+						<a href="https://github.com/dongzzang/WebApp">
+							<img class="portal" src="./../media/github.PNG" alt="깃허브"/>
+						</a>
+					</li>
+					<li>
+						<a href="https://dongzzang.tistory.com/">
+							<img class="portal" src="./../media/tistory.PNG" alt="티스토리"/>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	</body>
+	</html>

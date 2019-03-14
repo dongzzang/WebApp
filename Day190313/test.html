@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>테스트</title>
+<script type="text/javascript" src="제이쿼리 경로"></script>
+
+</head>
+<body>
+<img src="images/more_btn.jpg" alt="more_btn"  class="more_btn" style="cursor:pointer;"/>
+<div class="side_bar" style="position:absolute; left:0px; top:0px; border:1px solid black;">
+
+<ul >
+<li>1</li>
+<li>2</li>
+<li>3</li>
+<li>4</li>
+<li>5</li>
+<li>6</li>
+<li>7</li>
+</ul>
+</div>
+<script>
+$(document).ready(function() {
+
+ var menu_flag = true;
+
+ $(".more_btn").bind("click", function() {
+
+ if (menu_flag) {
+  $(".side_bar").animate({"left":"-200px"}, 300);
+
+  menu_flag = false;
+ } else {
+  $(".side_bar").animate({"left":"0px"}, 300);
+
+  menu_flag = true;
+ }
+ });
+});
+</script>
+</body>
+</html>
